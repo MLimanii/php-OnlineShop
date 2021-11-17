@@ -1,0 +1,7 @@
+[2021-11-17 00:11:03] - user with username  has signed in 
+[2021-11-17 00:11:25] - user with usernamemake order with items: BBQ chicken breast, Iced Tea Bottle, Iced Tea Bottle, Chocolate Muffin,  with total price: 19.96 
+[2021-11-17 00:11:12] - user with usernamemuhamedmake order with items: BBQ chicken breast, Bacon Burger,  with total price: 9.98 
+[2021-11-17 00:11:45] - user with username muhamed make order with items: BBQ chicken breast,  with total price: 4.99 
+[2021-11-17 00:11:06] - user with username  make order with items: Apricot Chicken,  with total price: 4.99 
+[2021-11-17 00:11:10] - user with username  make order with items: Blueberry Shake,  with total price: 4.99 
+[2021-11-17 01:11:48] - user with username Passionisshop make order with items: Bacon Burger, Grand Italiano, Chocolate Muffin,  with total price: 14.97 

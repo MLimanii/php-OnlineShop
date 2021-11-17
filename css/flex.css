@@ -1,0 +1,206 @@
+.flexslider {
+    width: 100%;
+	height: 800px;
+	position: relative;
+	margin: 0 auto;
+    font-size: 0;
+}
+.flexslider li {
+	transition: All 0.6s ease;
+    -webkit-transition: All 0.6s ease;
+    -moz-transition: All 0.6s ease;
+    -o-transition: All 0.6s ease;
+    list-style: none;
+}
+.flexslider .slides { 
+    zoom: 1; 
+}
+.flexslider .slides img { 
+    position: relative;
+	width: 100%;
+	height: 800px;
+    overflow: hidden;
+}
+.cropped {
+    width: 100%;
+	height: 800px;
+    object-fit: cover;
+}
+.featured-img {
+    width: 100%;
+	position: relative;
+}
+
+/* Direction Nav */
+.flex-direction-nav {
+    *height: 0;
+}
+.flex-direction-nav a  { 
+	display: block; 
+	position: absolute; 
+	top: 45%; 
+	z-index: 10; 
+	overflow: hidden; 
+	opacity: 0; 
+	cursor: pointer; 
+    background: rgba(255, 255, 255, 0.8);
+	-webkit-transition: all .3s ease; 
+	-moz-transition: all .3s ease; 
+	transition: all .3s ease; 
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+.flex-direction-nav .flex-prev { 
+	left: 0px;
+}
+.flex-direction-nav .flex-next { 
+	right: 0px; 
+	text-align: right; 
+}
+.flexslider:hover .flex-prev { 
+	opacity: 1; 
+	left: 100px; 
+}
+.flexslider:hover .flex-next { 
+	opacity: 1;
+	right: 100px; 
+}
+.flex-direction-nav .flex-disabled { 
+	opacity: 0!important; filter:alpha(opacity=0); cursor: default; 
+}
+.flex-direction-nav a:before { 
+	font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    text-decoration: none;
+	font-size: 20px; 
+	line-height: 1; 
+	display: inline-block; 
+	content: '\f104';
+	color: #000;
+}
+.flex-direction-nav a.flex-next:before {
+	content: '\f105'; 
+}
+.flex-control-nav {
+	width: 100%;
+  	position: absolute;
+  	bottom: 70px;
+	left: 0;
+  	text-align: center;
+	display: block;
+}
+.flex-control-nav li {
+	margin: 0 5px;
+  	display: inline-block;
+  	zoom: 1;
+  	*display: inline;
+}
+.flex-control-paging li a {
+  	width: 20px;
+  	height: 20px;
+	border-radius: 50%;
+  	display: block;
+  	background: rgb(145, 144, 144);
+  	cursor: pointer;
+  	text-indent: -9999px;
+}
+.flex-control-paging li a:hover {
+  	background: #fff;
+}
+.flex-control-paging li a.flex-active {
+  	background: #fff;
+  	cursor: default;
+}
+
+/* Featured Title Shadow */
+.featured-shadow {
+	width: 100%;
+	height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+	background-image: radial-gradient( circle 1224px at 10.6% 8.8%,  rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.2) 100% );
+}
+.featured-info {
+	width: 1200px;
+	height: 100%;
+	position: relative;
+	margin: 0 auto;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+}
+.featured-info .f-title {
+	font-size: 100px;
+	color:var(--white);
+	font-weight: 700;
+	margin: 0;
+	line-height: 100px;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+	letter-spacing: -5px;
+	text-transform: uppercase;
+}
+.featured-info .s-title {
+	font-size: 130px;
+	font-weight: 700;
+	margin: 0;
+	line-height: 100px;
+	color: var(--yellow);
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+	letter-spacing: -8px;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+}
+.featured-info .sub-title {
+	font-size: 30px;
+	font-weight: 600;
+	margin: 0;
+	line-height: 40px;
+	color: var(--green);
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+	margin-bottom: 10px;
+}
+.some-text {
+	font-size: 16px;
+	color: var(--white);
+	font-weight: 400;
+	margin: 0;
+	line-height: 30px;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+.slider-price-info {
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+}
+.slider-btn-order {
+    background-color: var(--yellow);
+    color: var(--black);
+	padding: 15px 50px;
+	font-size: 14px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-right: 20px;
+}
+.slider-price {
+	font-size: 35px;
+	color: var(--green);
+	font-weight: 700;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+	margin-right: 20px;
+}
+.slider-price-off {
+	font-size: 30px;
+	color: var(--yellow);
+	font-weight: 400;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+	text-decoration: line-through;
+}
