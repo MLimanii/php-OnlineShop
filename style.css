@@ -22,6 +22,8 @@ a {
 header {
     width: 100%;
     background-color: var(--white);
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 30%);
 }
 header .inner {
     width: 1200px;
@@ -776,4 +778,63 @@ footer {
     align-items: center;
     background-color: #1C1C1C;
     color: var(--white);
+}
+
+.contact-container {
+    width: 100%;
+    padding-top: 50px;
+}
+.contact-inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+.contact-inner h3 {
+    color: #585858;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.contacts-inputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-inner input[type=text], .contact-inner input[type=email] {
+    width: 32.5%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #dddfe2;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+.contact-inner input[type=text]:focus, .contact-inner input[type=email]:focus {
+    box-shadow: 0 0 5pt 0.4pt #eee;
+    outline-width: 0px;
+}
+.contact-inner input[type=submit] {
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    background-color: var(--yellow);
+    border: 0;
+    color: var(--black);
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 5px;
+}
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #dddfe2;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+.contact-inner textarea:focus {
+    box-shadow: 0 0 5pt 0.4pt #eee;
+    outline-width: 0px;
 }
